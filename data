@@ -3,11 +3,11 @@
     "regex_features": [
       {
         "name": "zipcode",
-        "pattern": "[0-9]{6}"
+        "pattern": "[0-9]{5}"
       },
       {
         "name": "greet",
-        "pattern": "hey[^\\s]*"
+        "pattern": "hey[^\\w]*"
       }
     ],
     "entity_synonyms": [
