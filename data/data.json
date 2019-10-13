@@ -15,9 +15,8 @@
       },
       {
         "name": "email",
-        "pattern": "\S+@\S+"
+        "pattern": "email@gmail.com"
       }
-	  
     ],
     "entity_synonyms": [
       {
@@ -254,6 +253,21 @@
         "entities": []
       },
       {
+        "text": "need to book a table",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "need a table",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "like a table in a restaurant",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
         "text": "anywhere in the west",
         "intent": "restaurant_search",
         "entities": [
@@ -382,6 +396,90 @@
             "end": 9,
             "value": "Lithuania",
             "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "300",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "300",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "500",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "500",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "700",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "700",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "1000",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "1000",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "almost 700",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "700",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "around 1500",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "1500",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "how about we say 2122",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "2122",
+            "entity": "price"
           }
         ]
       },

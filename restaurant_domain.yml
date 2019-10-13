@@ -31,8 +31,10 @@ templates:
     - "Hi, How can I help you!"
     - "Hey, How is it going. How May I help you Today"
   utter_goodbye:
-    - "goodbye :("
+    - "goodbye"
     - "Bye-bye"
+  utter_email_sent_goodbye:
+    - "Email sent. Have a good day..!"
   utter_default:
     - "I did not understand, Please repeat your answers"
   utter_ask_cuisine: 
@@ -67,14 +69,6 @@ templates:
         payload: "300 to 700"
       - title: "More than 700"
         payload: "More than 700" 
-    - text: "Can you please specify the budget for two people"
-      buttons:
-      - title: "Lesser than 300"
-        payload: "Lesser than 300"
-      - title: "300 to 700"
-        payload: "300 to 700"
-      - title: "More than 700"
-        payload: "More than 700"
     
 
 
@@ -85,8 +79,9 @@ actions:
 - utter_ask_howcanhelp
 - utter_ask_location
 - utter_ask_cuisine
-- actions.ActionSearchRestaurants
 - utter_ask_email
 - utter_ask_price
 - utter_ask_for_email_address
+- utter_email_sent_goodbye
 - actions.SendMail
+- actions.ActionSearchRestaurants

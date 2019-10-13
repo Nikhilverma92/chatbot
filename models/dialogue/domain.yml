@@ -6,6 +6,11 @@ action_names:
 - utter_ask_howcanhelp
 - utter_ask_location
 - utter_ask_cuisine
+- utter_ask_email
+- utter_ask_price
+- utter_ask_for_email_address
+- utter_email_sent_goodbye
+- action_SendMail
 - action_restaurant
 actions:
 - utter_greet
@@ -14,12 +19,19 @@ actions:
 - utter_ask_howcanhelp
 - utter_ask_location
 - utter_ask_cuisine
+- utter_ask_email
+- utter_ask_price
+- utter_ask_for_email_address
+- utter_email_sent_goodbye
+- actions.SendMail
 - actions.ActionSearchRestaurants
 config:
   store_entities_as_slots: true
 entities:
 - location
 - cuisine
+- price
+- email
 intents:
 - greet
 - affirm
@@ -31,7 +43,16 @@ slots:
   cuisine:
     initial_value: null
     type: rasa_core.slots.TextSlot
+  email:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  email_address:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   location:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  price:
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:
@@ -46,14 +67,33 @@ templates:
     - payload: North Indian
       title: North Indian
     text: what kind of cuisine would you like?
+  utter_ask_email:
+  - text: Do you wnat the details on your email
+  - text: Should I send you details of all the restaurants on email?
+  utter_ask_for_email_address:
+  - text: Can you please share your Email Address
+  - text: What is your preferred Email Address
   utter_ask_howcanhelp:
   - text: how can I help you?
   utter_ask_location:
   - text: In what location?
+  - text: Do you have a preferred location
+  - text: Where do you want to dine today
+  utter_ask_price:
+  - buttons:
+    - payload: Lesser than 300
+      title: Lesser than 300
+    - payload: 300 to 700
+      title: 300 to 700
+    - payload: More than 700
+      title: More than 700
+    text: What's the average budget for two people
   utter_default:
-  - text: default message
+  - text: I did not understand, Please repeat your answers
+  utter_email_sent_goodbye:
+  - text: Email sent. Have a good day..!
   utter_goodbye:
-  - text: goodbye :(
+  - text: goodbye
   - text: Bye-bye
   utter_greet:
   - text: hey there! How may i help you
