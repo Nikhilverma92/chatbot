@@ -11,8 +11,13 @@
       },
       {
         "name": "price",
-        "pattern": "[0-9]{3,4}"
+        "pattern": "*[0-9]{3,4}"
+      },
+      {
+        "name": "email",
+        "pattern": "\S+@\S+"
       }
+	  
     ],
     "entity_synonyms": [
       {

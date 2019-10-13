@@ -34,6 +34,18 @@
         "text": "dear sir"
       },
       {
+        "intent": "greet",
+        "text": "yo"
+      },
+      {
+        "intent": "greet",
+        "text": "whats up"
+      },
+      {
+        "intent": "greet",
+        "text": "what's up"
+      },
+      {
         "intent": "affirm",
         "text": "yes"
       },
@@ -76,6 +88,10 @@
       {
         "intent": "affirm",
         "text": "sounds really good"
+      },
+      {
+        "intent": "affirm",
+        "text": "yup"
       },
       {
         "intent": "restaurant_search",
@@ -182,12 +198,12 @@
         "entities": [
           {
             "start": 14,
-            "end": 19,
-            "value": "18328",
+            "end": 20,
+            "value": "183283",
             "entity": "location"
           }
         ],
-        "text": "anywhere near 18328"
+        "text": "anywhere near 183283"
       },
       {
         "intent": "restaurant_search",
@@ -206,12 +222,12 @@
         "entities": [
           {
             "start": 29,
-            "end": 34,
-            "value": "29432",
+            "end": 35,
+            "value": "294321",
             "entity": "location"
           }
         ],
-        "text": "I am looking a restaurant in 29432"
+        "text": "I am looking a restaurant in 294321"
       },
       {
         "intent": "restaurant_search",
@@ -344,6 +360,54 @@
           }
         ],
         "text": "In Delhi."
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "Delhi",
+            "entity": "location"
+          }
+        ],
+        "text": "around Delhi"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 10,
+            "value": "pune",
+            "entity": "location"
+          }
+        ],
+        "text": "maybe pune"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 25,
+            "value": "Allahabad",
+            "entity": "location"
+          }
+        ],
+        "text": "Show me some in Allahabad"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "gowahati",
+            "entity": "location"
+          }
+        ],
+        "text": "how about gowahati"
       },
       {
         "intent": "restaurant_search",
@@ -484,6 +548,54 @@
           }
         ],
         "text": "please help me to find restaurants in pune"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 4,
+            "end": 13,
+            "value": "bangalore",
+            "entity": "location"
+          }
+        ],
+        "text": "say bangalore"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "new delhi",
+            "entity": "location"
+          }
+        ],
+        "text": "new delhi"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "ncr",
+            "entity": "location"
+          }
+        ],
+        "text": "about ncr"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 17,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "wanna eat mexican"
       }
     ],
     "regex_features": [
@@ -492,8 +604,12 @@
         "pattern": "hey[^\\s]*"
       },
       {
+        "name": "price",
+        "pattern": "[0-9]{3,4}"
+      },
+      {
         "name": "zipcode",
-        "pattern": "[0-9]{5}"
+        "pattern": "[0-9]{6}"
       }
     ],
     "entity_synonyms": [
@@ -509,7 +625,16 @@
         "value": "vegetarian",
         "synonyms": [
           "veggie",
-          "vegg"
+          "vegg",
+          "veg"
+        ]
+      },
+      {
+        "value": "non vegetarian",
+        "synonyms": [
+          "non veg",
+          "non",
+          "chicken"
         ]
       }
     ]

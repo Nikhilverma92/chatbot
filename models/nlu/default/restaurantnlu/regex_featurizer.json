@@ -4,7 +4,11 @@
         "pattern": "hey[^\\s]*"
     },
     {
+        "name": "price",
+        "pattern": "[0-9]{3,4}"
+    },
+    {
         "name": "zipcode",
-        "pattern": "[0-9]{5}"
+        "pattern": "[0-9]{6}"
     }
 ]

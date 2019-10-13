@@ -3,10 +3,16 @@ slots:
     type: text
   cuisine:
     type: text
+  price:
+    type: text
+  email:
+    type: text
 
 entities:
 - location
 - cuisine
+- price
+- email
 
 intents:
  - greet
@@ -26,7 +32,7 @@ templates:
     - "goodbye :("
     - "Bye-bye"
   utter_default:
-    - "default message"
+    - "I did not understand, Please repeat your answers"
   utter_ask_cuisine: 
     - text: "what kind of cuisine would you like?"
       buttons:
@@ -42,6 +48,33 @@ templates:
     - "how can I help you?"
   utter_ask_location:
     - "In what location?"
+    - "Do you have a preferred location"
+    - "Where do you want to dine today"
+  utter_ask_email:
+    - "Do you wnat the details on your email"
+    - "Should I send you details of all the restaurants on email?"
+  utter_ask_for_email_address:
+    - "Can you please share your Email Address"
+    - "What is your preferred Email Address"
+  utter_ask_price:
+    - text: "What's the average budget for two people"
+      buttons:
+      - title: "Lesser than 300"
+        payload: "Lesser than 300"
+      - title: "300 to 700"
+        payload: "300 to 700"
+      - title: "More than 700"
+        payload: "More than 700" 
+    - text: "Can you please specify the budget for two people"
+      buttons:
+      - title: "Lesser than 300"
+        payload: "Lesser than 300"
+      - title: "300 to 700"
+        payload: "300 to 700"
+      - title: "More than 700"
+        payload: "More than 700"
+    
+
 
 actions:
 - utter_greet
@@ -51,3 +84,6 @@ actions:
 - utter_ask_location
 - utter_ask_cuisine
 - actions.ActionSearchRestaurants
+- utter_ask_email
+- utter_ask_price
+- utter_ask_for_email_address

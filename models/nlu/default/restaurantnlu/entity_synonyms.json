@@ -3,6 +3,10 @@
   "chines": "chinese",
   "veggie": "vegetarian",
   "vegg": "vegetarian",
+  "veg": "vegetarian",
+  "non veg": "non vegetarian",
+  "non": "non vegetarian",
+  "chicken": "non vegetarian",
   "moderate": "mid",
   "four": "4"
 }
