@@ -3,7 +3,7 @@
     "regex_features": [
       {
         "name": "zipcode",
-        "pattern": "[0-9]{5}"
+        "pattern": "[0-9]{6}"
       },
       {
         "name": "greet",
