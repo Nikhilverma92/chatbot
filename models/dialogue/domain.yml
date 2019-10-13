@@ -10,7 +10,6 @@ action_names:
 - utter_ask_price
 - utter_ask_for_email_address
 - utter_email_sent_goodbye
-- action_SendMail
 - action_restaurant
 actions:
 - utter_greet
@@ -23,7 +22,6 @@ actions:
 - utter_ask_price
 - utter_ask_for_email_address
 - utter_email_sent_goodbye
-- actions.SendMail
 - actions.ActionSearchRestaurants
 config:
   store_entities_as_slots: true

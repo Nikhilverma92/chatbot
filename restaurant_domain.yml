@@ -83,5 +83,4 @@ actions:
 - utter_ask_price
 - utter_ask_for_email_address
 - utter_email_sent_goodbye
-- actions.SendMail
 - actions.ActionSearchRestaurants

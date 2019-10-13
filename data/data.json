@@ -161,6 +161,26 @@
         "entities": []
       },
       {
+        "text": "no",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "Nah",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "nope",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "na",
+        "intent": "deny",
+        "entities": []
+      },
+      {
         "text": "i'm looking for a place to eat",
         "intent": "restaurant_search",
         "entities": []
@@ -419,6 +439,30 @@
             "start": 0,
             "end": 3,
             "value": "500",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "above 5100",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 10,
+            "value": "5100",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "2001 below",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "2001",
             "entity": "price"
           }
         ]

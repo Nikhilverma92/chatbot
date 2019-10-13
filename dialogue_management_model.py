@@ -24,7 +24,7 @@ def train_dialogue(domain_file = 'restaurant_domain.yml',
 	
 	agent.train(
 				training_data_file,
-				#max_history = 3,
+				#max_history = 6,
 				epochs = 300,
 				batch_size = 50,
 				validation_split = 0.2,

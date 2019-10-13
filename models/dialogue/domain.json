@@ -28,7 +28,6 @@
     "prev_utter_ask_price",
     "prev_utter_ask_for_email_address",
     "prev_utter_email_sent_goodbye",
-    "prev_action_SendMail",
     "prev_action_restaurant"
   ]
 }
