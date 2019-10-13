@@ -647,6 +647,30 @@
             "entity": "location"
           }
         ]
+      },
+      {
+        "text": "about ncr",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "ncr",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "wanna eat mexican",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 17,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ]
       }
     ]
   }
