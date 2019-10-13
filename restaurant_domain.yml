@@ -7,6 +7,8 @@ slots:
     type: text
   email:
     type: text
+  email_address:
+    type: text
 
 entities:
 - location
