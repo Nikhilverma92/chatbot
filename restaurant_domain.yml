@@ -89,3 +89,4 @@ actions:
 - utter_ask_email
 - utter_ask_price
 - utter_ask_for_email_address
+- actions.SendMail

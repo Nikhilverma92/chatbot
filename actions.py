@@ -16,6 +16,9 @@ class ActionSearchRestaurants(Action):
 		zomato = zomatopy.initialize_app(config)
 		loc = tracker.get_slot('location')
 		cuisine = tracker.get_slot('cuisine')
+        
+        price = tracker.get_slot('price')
+        
 		location_detail=zomato.get_location(loc, 1)
 		d1 = json.loads(location_detail)
 		lat=d1["location_suggestions"][0]["latitude"]
@@ -28,7 +31,7 @@ class ActionSearchRestaurants(Action):
 			response= "no results"
 		else:
 			for restaurant in d['restaurants']:
-				response=response+ "Found "+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+"\n"
+				response=response+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ "has been rated" + restaurant['restaurant']['user_rating']['aggregrate_rating']\n"
 		
 		dispatcher.utter_message("-----"+response)
 		return [SlotSet('location',loc)]
