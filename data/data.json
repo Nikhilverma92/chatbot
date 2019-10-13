@@ -181,6 +181,21 @@
         "entities": []
       },
       {
+        "text": "no. thanks",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "thank you very much but no",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "nope, thats all",
+        "intent": "deny",
+        "entities": []
+      },
+      {
         "text": "i'm looking for a place to eat",
         "intent": "restaurant_search",
         "entities": []
@@ -428,6 +443,54 @@
             "end": 3,
             "value": "300",
             "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "900 plus",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "900",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "3165+",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "3165",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "akkic2@gmail.com",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "akkic2@gmail.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "testemail@tested.com.in",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 23,
+            "value": "testemail@tested.com.in",
+            "entity": "email"
           }
         ]
       },

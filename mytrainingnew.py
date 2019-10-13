@@ -35,3 +35,21 @@
     - utter_email_sent_goodbye
     - export
 
+## Generated Story -3141530855876654586
+* greet
+    - utter_greet
+* restaurant_search{"location": "pune"}
+    - slot{"location": "pune"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_price
+* restaurant_search
+    - action_restaurant
+    - slot{"location": "pune"}
+    - utter_ask_email
+* deny
+* deny
+    - utter_goodbye
+    - export
+
