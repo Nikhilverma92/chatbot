@@ -73,3 +73,18 @@
     - utter_email_sent_goodbye
     - export
 
+## Generated Story 6180926786765231440
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "italian", "location": "noida", "price": "medium"}
+    - slot{"cuisine": "italian"}
+    - slot{"location": "noida"}
+    - slot{"price": "medium"}
+    - action_restaurant
+    - slot{"location": "noida"}
+    - utter_ask_email
+* restaurant_search{"email": "akkic2@yahoo.com"}
+    - slot{"email": "akkic2@yahoo.com"}
+    - utter_email_sent_goodbye
+    - export
+
