@@ -53,3 +53,23 @@
     - utter_goodbye
     - export
 
+## Generated Story 490474450504330774
+* greet
+    - utter_greet
+* restaurant_search{"location": "mumbai"}
+    - slot{"location": "mumbai"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
+    - utter_ask_price
+* restaurant_search{"price": "low"}
+    - slot{"price": "low"}
+    - action_restaurant
+    - slot{"location": "mexican"}
+    - utter_ask_email
+* affirm
+    - utter_ask_for_email_address
+* restaurant_search{"email": "aakash@gmail.com"}
+    - utter_email_sent_goodbye
+    - export
+

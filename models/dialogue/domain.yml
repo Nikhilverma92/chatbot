@@ -29,7 +29,7 @@ entities:
 - location
 - cuisine
 - price
-- email
+- email_address
 intents:
 - greet
 - affirm
@@ -41,9 +41,6 @@ slots:
   cuisine:
     initial_value: null
     type: rasa_core.slots.TextSlot
-  email:
-    initial_value: null
-    type: rasa_core.slots.TextSlot
   email_address:
     initial_value: null
     type: rasa_core.slots.TextSlot
@@ -52,7 +49,11 @@ slots:
     type: rasa_core.slots.TextSlot
   price:
     initial_value: null
-    type: rasa_core.slots.TextSlot
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - low
+    - medium
+    - high
 templates:
   utter_ask_cuisine:
   - buttons:
@@ -64,6 +65,10 @@ templates:
       title: South Indian
     - payload: North Indian
       title: North Indian
+    - payload: Mexican
+      title: Mexican
+    - payload: American
+      title: American
     text: what kind of cuisine would you like?
   utter_ask_email:
   - text: Do you wnat the details on your email
@@ -80,11 +85,11 @@ templates:
   utter_ask_price:
   - buttons:
     - payload: Lesser than 300
-      title: Lesser than 300
+      title: Low
     - payload: 300 to 700
-      title: 300 to 700
+      title: Medium
     - payload: More than 700
-      title: More than 700
+      title: High
     text: What's the average budget for two people
   utter_default:
   - text: I did not understand, Please repeat your answers

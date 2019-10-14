@@ -21,7 +21,7 @@ class ActionSearchRestaurants(Action):
 		d1 = json.loads(location_detail)
 		lat=d1["location_suggestions"][0]["latitude"]
 		lon=d1["location_suggestions"][0]["longitude"]
-		cuisines_dict={'mexican':5,'American':25,'chinese':25,'italian':55,'north indian':50,'south indian':85}
+		cuisines_dict={'mexican':73,'American':1,'chinese':25,'italian':55,'north indian':50,'south indian':85}
 		results=zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine)), 5)
 		d = json.loads(results)
 		response=""

@@ -1,5 +1,9 @@
 [
     {
+        "name": "email",
+        "pattern": "email@gmail.com"
+    },
+    {
         "name": "greet",
         "pattern": "hey[^\\s]*"
     },

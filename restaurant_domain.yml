@@ -9,7 +9,7 @@ slots:
     - Low
     - Medium
     - High
-  email_address:
+  email:
     type: text
 
 entities:

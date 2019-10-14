@@ -94,6 +94,34 @@
         "text": "yup"
       },
       {
+        "intent": "deny",
+        "text": "no"
+      },
+      {
+        "intent": "deny",
+        "text": "Nah"
+      },
+      {
+        "intent": "deny",
+        "text": "nope"
+      },
+      {
+        "intent": "deny",
+        "text": "na"
+      },
+      {
+        "intent": "deny",
+        "text": "no. thanks"
+      },
+      {
+        "intent": "deny",
+        "text": "thank you very much but no"
+      },
+      {
+        "intent": "deny",
+        "text": "nope, thats all"
+      },
+      {
         "intent": "restaurant_search",
         "text": "i'm looking for a place to eat"
       },
@@ -180,6 +208,18 @@
       {
         "intent": "restaurant_search",
         "text": "search for restaurants"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "need to book a table"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "need a table"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "like a table in a restaurant"
       },
       {
         "intent": "restaurant_search",
@@ -312,6 +352,162 @@
           }
         ],
         "text": "Lithuania"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "300",
+            "entity": "price"
+          }
+        ],
+        "text": "300"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "900",
+            "entity": "price"
+          }
+        ],
+        "text": "900 plus"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "3165",
+            "entity": "price"
+          }
+        ],
+        "text": "3165+"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "akkic2@gmail.com",
+            "entity": "email"
+          }
+        ],
+        "text": "akkic2@gmail.com"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 23,
+            "value": "testemail@tested.com.in",
+            "entity": "email"
+          }
+        ],
+        "text": "testemail@tested.com.in"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "500",
+            "entity": "price"
+          }
+        ],
+        "text": "500"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 10,
+            "value": "5100",
+            "entity": "price"
+          }
+        ],
+        "text": "above 5100"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "2001",
+            "entity": "price"
+          }
+        ],
+        "text": "2001 below"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "700",
+            "entity": "price"
+          }
+        ],
+        "text": "700"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "1000",
+            "entity": "price"
+          }
+        ],
+        "text": "1000"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "700",
+            "entity": "price"
+          }
+        ],
+        "text": "almost 700"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "1500",
+            "entity": "price"
+          }
+        ],
+        "text": "around 1500"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "2122",
+            "entity": "price"
+          }
+        ],
+        "text": "how about we say 2122"
       },
       {
         "intent": "restaurant_search",
@@ -596,9 +792,245 @@
           }
         ],
         "text": "wanna eat mexican"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Low",
+            "entity": "price"
+          }
+        ],
+        "text": "Low"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Medium",
+            "entity": "price"
+          }
+        ],
+        "text": "Medium"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "High",
+            "entity": "High"
+          }
+        ],
+        "text": "High"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "high",
+            "entity": "price"
+          }
+        ],
+        "text": "how about high"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I want in a medium price range"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "low",
+            "entity": "price"
+          }
+        ],
+        "text": "lets go for low today"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 35,
+            "end": 41,
+            "value": "medium",
+            "entity": "price"
+          }
+        ],
+        "text": "the price range should be somewhat medium"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "price",
+            "entity": "price"
+          }
+        ],
+        "text": "searching for low price restaurants"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 23,
+            "end": 27,
+            "value": "high",
+            "entity": "price"
+          }
+        ],
+        "text": "i would like to go for high end restaurants"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 19,
+            "value": "low",
+            "entity": "price"
+          }
+        ],
+        "text": "would like some low price restaurants"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "High",
+            "entity": "price"
+          }
+        ],
+        "text": "High budget"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "medium",
+            "entity": "price"
+          }
+        ],
+        "text": "medium budget restaurants"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "high",
+            "entity": "price"
+          }
+        ],
+        "text": "budget is high today"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 17,
+            "value": "Mexican",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "how about Mexican food"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 21,
+            "value": "aakashkumar@gmail.com",
+            "entity": "email"
+          }
+        ],
+        "text": "aakashkumar@gmail.com"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 43,
+            "value": "arvindabc@yahoo.com",
+            "entity": "email"
+          }
+        ],
+        "text": "yes on my email address arvindabc@yahoo.com"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes why not"
+      },
+      {
+        "intent": "affirm",
+        "text": "that would be perfect"
+      },
+      {
+        "intent": "deny",
+        "text": "no thank you very much"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "nikhil25@gmail.com",
+            "entity": "email"
+          }
+        ],
+        "text": "nikhil25@gmail.com"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 38,
+            "value": "zabana@hotmail.com",
+            "entity": "email"
+          }
+        ],
+        "text": "my email address is zabana@hotmail.com"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 15,
+            "end": 28,
+            "value": "xyz@gmail.com",
+            "entity": "email"
+          }
+        ],
+        "text": "my email id is xyz@gmail.com"
       }
     ],
     "regex_features": [
+      {
+        "name": "email",
+        "pattern": "email@gmail.com"
+      },
       {
         "name": "greet",
         "pattern": "hey[^\\s]*"
