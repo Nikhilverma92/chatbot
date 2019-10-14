@@ -9,15 +9,15 @@
 * restaurant_search{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
     - utter_ask_price
-* restaurant_search{"price": "300"}
-	-slot{"price": "300"}
-	-action_restaurant
-	-utter_ask_email
+* restaurant_search{"price": "Low"}
+	- slot{"price": "Low"}
+	- action_restaurant
+	- utter_ask_email
 * affirm
-	-utter_ask_for_email_address
+	- utter_ask_for_email_address
 * restaurant_search{"email": "email@gmail.com"}
-	-slot{"email": "email@gmail.com"}
-	-utter_email_sent_goodbye
+	- slot{"email": "email@gmail.com"}
+	- utter_email_sent_goodbye
 	
 	
 ## Generated Story by hand 2
@@ -31,12 +31,12 @@
 * restaurant_search{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
     - utter_ask_price
-* restaurant_search{"price": "300"}
-	-slot{"price": "300"}
-	-action_restaurant
-	-utter_ask_email
+* restaurant_search{"price": "High"}
+	- slot{"price": "High"}
+	- action_restaurant
+	- utter_ask_email
 * deny
-	-utter_goodbye
+	- utter_goodbye
 
 
 
@@ -51,12 +51,14 @@
 * restaurant_search{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
     - utter_ask_price
-* restaurant_search
+* restaurant_search{"price": "High"}
+	- slot{"price": "High"}
     - action_restaurant
     - utter_ask_email
 * affirm
     - utter_ask_for_email_address
-* restaurant_search
+* restaurant_search{"email": "email@gmail.com"}
+	- slot{"email": "email@gmail.com"}
     - utter_email_sent_goodbye
     - export
 
@@ -72,7 +74,8 @@
 * restaurant_search{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
     - utter_ask_price
-* restaurant_search
+* restaurant_search{"price": "Medium"}
+	- slot{"price": "Medium"}
     - action_restaurant
     - utter_ask_email
 * deny
@@ -87,30 +90,34 @@
 * restaurant_search{"cuisine": "indian"}
     - slot{"cuisine": "indian"}
     - utter_ask_price
-* restaurant_search
+* restaurant_search{"price": "High"}
+	- slot{"price": "High"}
     - action_restaurant
     - slot{"location": "delhi"}
     - utter_ask_email
 * affirm
     - utter_ask_for_email_address
-* restaurant_search
+* restaurant_search{"email": "email@gmail.com"}
+	- slot{"email": "email@gmail.com"}
     - utter_email_sent_goodbye
     - export
 
 ## Generated Story -1116213696233533874
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "chinese", "location": "pune"}
-    - slot{"cuisine": "chinese"}
+* restaurant_search{"cuisine": "Italian", "location": "pune"}
+    - slot{"cuisine": "Italian"}
     - slot{"location": "pune"}
     - utter_ask_price
-* restaurant_search
+* restaurant_search{"price": "Low"}
+	- slot{"price": "Low"}
     - action_restaurant
     - slot{"location": "pune"}
     - utter_ask_email
 * affirm
     - utter_ask_for_email_address
-* restaurant_search
+* restaurant_search{"email": "email@gmail.com"}
+	- slot{"email": "email@gmail.com"}
     - utter_email_sent_goodbye
     - export
 
@@ -122,7 +129,8 @@
     - slot{"cuisine": "chinese"}
     - slot{"location": "pune"}
     - utter_ask_price
-* restaurant_search
+* restaurant_search{"price": "Low"}
+	- slot{"price": "Low"}
     - action_restaurant
     - slot{"location": "pune"}
     - utter_ask_email
@@ -136,10 +144,11 @@
 * restaurant_search{"location": "pune"}
     - slot{"location": "pune"}
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
+* restaurant_search{"cuisine": "Italian"}
+    - slot{"cuisine": "Italian"}
     - utter_ask_price
-* restaurant_search
+* restaurant_search{"price": "Medium"}
+	- slot{"price": "Medium"}
     - action_restaurant
     - slot{"location": "pune"}
     - utter_ask_email

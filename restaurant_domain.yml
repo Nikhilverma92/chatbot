@@ -26,7 +26,6 @@ intents:
  - thankyou
  - restaurant_search
 
-
 templates:
   utter_greet:
     - "hey there! How may i help you"
