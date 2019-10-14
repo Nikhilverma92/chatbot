@@ -10,10 +10,6 @@
         "pattern": "hey[^\\s]*"
       },
       {
-        "name": "price",
-        "pattern": "*[0-9]{3,4}"
-      },
-      {
         "name": "email",
         "pattern": "email@gmail.com"
       }
@@ -879,6 +875,230 @@
             "end": 17,
             "value": "mexican",
             "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "Low",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Low",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "Medium",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Medium",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "High",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "High",
+            "entity": "High"
+          }
+        ]
+      },
+      {
+        "text": "how about high",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "high",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "I want in a medium price range",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "lets go for low today",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "low",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "the price range should be somewhat medium",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 35,
+            "end": 41,
+            "value": "medium",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "searching for low price restaurants",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "price",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "i would like to go for high end restaurants",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 23,
+            "end": 27,
+            "value": "high",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "would like some low price restaurants",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 19,
+            "value": "low",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "High budget",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "High",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "medium budget restaurants",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "medium",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "budget is high today",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "high",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "how about Mexican food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 17,
+            "value": "Mexican",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "aakashkumar@gmail.com",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 21,
+            "value": "aakashkumar@gmail.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "yes on my email address arvindabc@yahoo.com",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 43,
+            "value": "arvindabc@yahoo.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "yes why not",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that would be perfect",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "no thank you very much",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "nikhil25@gmail.com",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "nikhil25@gmail.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "my email address is zabana@hotmail.com",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 38,
+            "value": "zabana@hotmail.com",
+            "entity": "email"
           }
         ]
       }

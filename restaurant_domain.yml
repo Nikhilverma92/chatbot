@@ -4,9 +4,11 @@ slots:
   cuisine:
     type: text
   price:
-    type: text
-  email:
-    type: text
+    type: categorical
+    values:
+    - Low
+    - Medium
+    - High
   email_address:
     type: text
 
@@ -14,7 +16,7 @@ entities:
 - location
 - cuisine
 - price
-- email
+- email_address
 
 intents:
  - greet
@@ -48,6 +50,10 @@ templates:
         payload: "South Indian"
       - title: "North Indian"
         payload: "North Indian"
+      - title: "Mexican"
+        payload: "Mexican"
+      - title: "American"
+        payload: "American"
   utter_ask_howcanhelp:
     - "how can I help you?"
   utter_ask_location:
@@ -63,11 +69,11 @@ templates:
   utter_ask_price:
     - text: "What's the average budget for two people"
       buttons:
-      - title: "Lesser than 300"
+      - title: "Low"
         payload: "Lesser than 300"
-      - title: "300 to 700"
+      - title: "Medium"
         payload: "300 to 700"
-      - title: "More than 700"
+      - title: "High"
         payload: "More than 700" 
     
 
