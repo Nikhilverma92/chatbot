@@ -1101,6 +1101,18 @@
             "entity": "email"
           }
         ]
+      },
+      {
+        "text": "my email id is xyz@gmail.com",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 15,
+            "end": 28,
+            "value": "xyz@gmail.com",
+            "entity": "email"
+          }
+        ]
       }
     ]
   }
