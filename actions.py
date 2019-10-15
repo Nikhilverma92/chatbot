@@ -7,6 +7,31 @@ from rasa_core.events import SlotSet
 import zomatopy
 import json
 
+
+class Searchforlocation(Action):
+    def name(self):
+        return 'action_location'
+
+    def run(self, dispatcher, tracker, domain):
+        locn = tracker.get_slot('location')
+        dispatcher.utter_message("------------------------------\n"+locn)
+        FromTier12 = ['pune','delhi','mumbai','noida']
+        FromTier3 = ['bhutan','gurgaon']
+        if locn.lower() in FromTier12:
+            responses = "Tier12"
+            dispatcher.utter_message("---------------It is in Tier12---------------\n")    
+            return [SlotSet('Validate_loc',responses),SlotSet('location',locn)]
+        elif locn.lower() in FromTier3:
+            responses = "NotWorking"
+            dispatcher.utter_message("---------------It is in Tier3---------------\n")
+            return [SlotSet('Validate_loc',responses),SlotSet('location',null)]
+        else:
+            response = "OutOfRange"
+            dispatcher.utter_message("---------------It is Out of range---------------\n")
+            return [SlotSet('Validate_loc',responses),SlotSet('location',null)]
+        
+        
+
 class ActionSearchRestaurants(Action):
 	def name(self):
 		return 'action_restaurant'
@@ -33,4 +58,3 @@ class ActionSearchRestaurants(Action):
 
 		dispatcher.utter_message("------------------------------\n"+response)
 		return [SlotSet('location',loc)]
-

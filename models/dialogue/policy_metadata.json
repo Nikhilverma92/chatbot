@@ -2,10 +2,16 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
+        "location",
         "price",
         "email",
-        "location",
         "cuisine"
+      ]
+    },
+    "action_location": {
+      "slots": [
+        "Validate_loc",
+        "location"
       ]
     },
     "action_restaurant": {
@@ -15,14 +21,11 @@
     },
     "utter_email_sent_goodbye": {
       "slots": []
-    },
-    "utter_goodbye": {
-      "slots": []
     }
   },
   "rasa_core": "0.10.1",
   "max_histories": [
-    4,
+    5,
     5
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",

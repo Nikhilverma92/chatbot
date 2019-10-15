@@ -1024,6 +1024,397 @@
           }
         ],
         "text": "my email id is xyz@gmail.com"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 45,
+            "value": "best north indian restaurants",
+            "entity": "cuisine"
+          },
+          {
+            "start": 49,
+            "end": 55,
+            "value": "Kerala",
+            "entity": "location"
+          }
+        ],
+        "text": "can you tell me best north indian restaurants in Kerala"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "near me",
+            "entity": "location"
+          }
+        ],
+        "text": "restaurants near me "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 22,
+            "end": 47,
+            "value": "good american restaurants",
+            "entity": "cuisine"
+          },
+          {
+            "start": 54,
+            "end": 58,
+            "value": "area",
+            "entity": "location"
+          }
+        ],
+        "text": "can you list out some good american restaurants in my area"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 23,
+            "value": "noth indian restaurants",
+            "entity": "cuisine"
+          },
+          {
+            "start": 27,
+            "end": 34,
+            "value": "Lucknow",
+            "entity": "location"
+          }
+        ],
+        "text": "noth indian restaurants in Lucknow"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 40,
+            "end": 45,
+            "value": "delhi",
+            "entity": "location"
+          }
+        ],
+        "text": "can you show me some restaurants around delhi"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 25,
+            "end": 37,
+            "value": "south indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I would like to eat some south indian today"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 27,
+            "end": 47,
+            "value": "chinese restaurants ",
+            "entity": "cuisine"
+          },
+          {
+            "start": 50,
+            "end": 54,
+            "value": "pune",
+            "entity": "location"
+          }
+        ],
+        "text": "Can you please tell me the chinese restaurants in pune"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "900",
+            "entity": "High"
+          }
+        ],
+        "text": "i guess 900 would be fine."
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 50,
+            "end": 54,
+            "value": "high",
+            "entity": "High"
+          },
+          {
+            "start": 26,
+            "end": 35,
+            "value": "expensive",
+            "entity": "High"
+          }
+        ],
+        "text": " i think i will go for an expensive one how about high"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 22,
+            "end": 29,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "i am in mood for some mexican today"
+      },
+      {
+        "intent": "deny",
+        "text": "no, thanks"
+      },
+      {
+        "entities": [
+          {
+            "start": 18,
+            "end": 27,
+            "value": "email id?",
+            "entity": "email"
+          }
+        ],
+        "text": "can you share you email id?"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 32,
+            "end": 41,
+            "value": "vijaywada",
+            "entity": "location"
+          },
+          {
+            "start": 5,
+            "end": 17,
+            "value": "north indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "some north indian resturants in vijaywada"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Bangalore",
+            "entity": "location"
+          }
+        ],
+        "text": "Bangalore"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "bengaluru",
+            "entity": "location"
+          }
+        ],
+        "text": "bengaluru"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "italian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "i want only italian food "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 29,
+            "end": 36,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "i want to eat some delicious mexican food "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "cheap",
+            "entity": "low"
+          }
+        ],
+        "text": "can you tell me some cheap place to eat"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "best",
+            "entity": "High"
+          },
+          {
+            "start": 27,
+            "end": 35,
+            "value": "amritsar",
+            "entity": "location"
+          }
+        ],
+        "text": "Tell me best resturants in amritsar"
+      },
+      {
+        "intent": "deny",
+        "text": "Thanks, but i don't want"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "medium",
+            "entity": "medium"
+          },
+          {
+            "start": 7,
+            "end": 13,
+            "value": "prices",
+            "entity": "price"
+          }
+        ],
+        "text": "medium prices for two "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 33,
+            "value": "nikhilverma@gmail.com",
+            "entity": "email"
+          }
+        ],
+        "text": "email id is nikhilverma@gmail.com"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 29,
+            "value": "nikhil45@gmail.com",
+            "entity": "email"
+          }
+        ],
+        "text": "send me at nikhil45@gmail.com"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 39,
+            "value": "aakash@yahoo.in",
+            "entity": "email"
+          }
+        ],
+        "text": "please send urgently on aakash@yahoo.in"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 25,
+            "end": 28,
+            "value": "300",
+            "entity": "low"
+          }
+        ],
+        "text": "I want restaurants under 300"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 21,
+            "end": 32,
+            "value": "500 rupees ",
+            "entity": "medium"
+          }
+        ],
+        "text": "I want to spend only 500 rupees "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 24,
+            "value": "1000 rupees ",
+            "entity": "High"
+          }
+        ],
+        "text": "I can spend 1000 rupees "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 12,
+            "value": "hyderabad",
+            "entity": "location"
+          }
+        ],
+        "text": "in hyderabad"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 3,
+            "end": 13,
+            "value": "Hyderabad ",
+            "entity": "location"
+          }
+        ],
+        "text": "in Hyderabad "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Chenai",
+            "entity": "location"
+          }
+        ],
+        "text": "Chenai "
       }
     ],
     "regex_features": [

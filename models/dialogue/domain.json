@@ -10,8 +10,16 @@
     "entity_cuisine",
     "entity_price",
     "entity_email_address",
+    "slot_Validate_loc_0",
+    "slot_Validate_loc_1",
+    "slot_Validate_loc_2",
     "slot_cuisine_0",
-    "slot_email_address_0",
+    "slot_cuisine_1",
+    "slot_cuisine_2",
+    "slot_cuisine_3",
+    "slot_cuisine_4",
+    "slot_cuisine_5",
+    "slot_email_0",
     "slot_location_0",
     "slot_price_0",
     "slot_price_1",
@@ -29,6 +37,8 @@
     "prev_utter_ask_price",
     "prev_utter_ask_for_email_address",
     "prev_utter_email_sent_goodbye",
-    "prev_action_restaurant"
+    "prev_utter_not_operate",
+    "prev_action_restaurant",
+    "prev_action_location"
   ]
 }
