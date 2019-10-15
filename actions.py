@@ -24,11 +24,11 @@ class Searchforlocation(Action):
         elif locn.lower() in FromTier3:
             responses = "NotWorking"
             dispatcher.utter_message("---------------It is in Tier3---------------\n")
-            return [SlotSet('Validate_loc',responses),SlotSet('location',null)]
+            return [SlotSet('Validate_loc',responses),SlotSet('location',None)]
         else:
             response = "OutOfRange"
             dispatcher.utter_message("---------------It is Out of range---------------\n")
-            return [SlotSet('Validate_loc',responses),SlotSet('location',null)]
+            return [SlotSet('Validate_loc',responses),SlotSet('location',None)]
         
         
 
