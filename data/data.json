@@ -1627,6 +1627,226 @@
             "entity": "location"
           }
         ]
+      },
+      {
+        "text": "looking for mexican curry around lucknow",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "mexican",
+            "entity": "cuisine"
+          },
+          {
+            "start": 33,
+            "end": 40,
+            "value": "lucknow",
+            "entity": "location"
+          },
+          {
+            "start": 26,
+            "end": 40,
+            "value": "around lucknow",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "around my city can you tell which is the best restaurant for american food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "my city",
+            "entity": "location"
+          },
+          {
+            "start": 61,
+            "end": 69,
+            "value": "american",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "please send me detail on cuisinelover@gmail.com",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 25,
+            "end": 47,
+            "value": "cuisinelover@gmail.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "yes please, wanderer@yahoo.in",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 12,
+            "end": 29,
+            "value": "wanderer@yahoo.in",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "mexican food is my favourite, can you send me details of only mexican food",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "mexican",
+            "entity": "cuisine"
+          },
+          {
+            "start": 62,
+            "end": 69,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "american food near my sister's house ",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "american",
+            "entity": "cuisine"
+          },
+          {
+            "start": 19,
+            "end": 36,
+            "value": "my sister's house",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "American food is my weakness ",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "American",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "can you find me south indian places in Jammu",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 28,
+            "value": "south indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "Jammu",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "No, please don't ",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "ping me at tanujagrawal@rediffmail.com",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 11,
+            "end": 38,
+            "value": "tanujagrawal@rediffmail.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "price is not a barrier for me, will prefer more than 700",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "price",
+            "entity": "price"
+          },
+          {
+            "start": 43,
+            "end": 56,
+            "value": "more than 700",
+            "entity": "High"
+          }
+        ]
+      },
+      {
+        "text": "low budget north indian restaurants in patna",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "low",
+            "entity": "low"
+          },
+          {
+            "start": 11,
+            "end": 23,
+            "value": "north indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "patna",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "i can spend 299 for mexcian food in bihar",
+        "intent": "",
+        "entities": [
+          {
+            "start": 20,
+            "end": 27,
+            "value": "mexcian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 12,
+            "end": 15,
+            "value": "299",
+            "entity": "low"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "value": "bihar",
+            "entity": "location"
+          }
+        ]
       }
     ]
   }
