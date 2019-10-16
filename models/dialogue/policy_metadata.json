@@ -2,9 +2,22 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
+<<<<<<< HEAD
         "cuisine",
         "price",
         "email",
+        "location"
+=======
+        "email",
+        "location",
+        "price",
+        "cuisine"
+>>>>>>> 8d206406e6e7b44b8fbc4c5fdb523e9ee3366c4d
+      ]
+    },
+    "action_location": {
+      "slots": [
+        "Validate_loc",
         "location"
       ]
     },
