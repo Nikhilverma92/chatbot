@@ -390,7 +390,7 @@
         "text": "3165+"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 0,
@@ -402,7 +402,7 @@
         "text": "akkic2@gmail.com"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 0,
@@ -954,7 +954,7 @@
         "text": "how about Mexican food"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 0,
@@ -966,16 +966,16 @@
         "text": "aakashkumar@gmail.com"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
-            "start": 24,
-            "end": 43,
+            "start": 30,
+            "end": 49,
             "value": "arvindabc@yahoo.com",
             "entity": "email"
           }
         ],
-        "text": "yes on my email address arvindabc@yahoo.com"
+        "text": "yes on my yahoo mail which is arvindabc@yahoo.com"
       },
       {
         "intent": "affirm",
@@ -990,7 +990,7 @@
         "text": "no thank you very much"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 0,
@@ -1002,7 +1002,7 @@
         "text": "nikhil25@gmail.com"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 20,
@@ -1014,7 +1014,7 @@
         "text": "my email address is zabana@hotmail.com"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 15,
@@ -1309,7 +1309,7 @@
         "text": "medium prices for two "
       },
       {
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 12,
@@ -1321,7 +1321,7 @@
         "text": "email id is nikhilverma@gmail.com"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 11,
@@ -1333,7 +1333,7 @@
         "text": "send me at nikhil45@gmail.com"
       },
       {
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 24,
