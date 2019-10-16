@@ -468,7 +468,7 @@
       },
       {
         "text": "akkic2@gmail.com",
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 0,
@@ -480,7 +480,7 @@
       },
       {
         "text": "testemail@tested.com.in",
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 0,
@@ -1041,7 +1041,7 @@
       },
       {
         "text": "aakashkumar@gmail.com",
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 0,
@@ -1052,12 +1052,12 @@
         ]
       },
       {
-        "text": "yes on my email address arvindabc@yahoo.com",
-        "intent": "restaurant_search",
+        "text": "yes on my yahoo mail which is arvindabc@yahoo.com",
+        "intent": "affirm",
         "entities": [
           {
-            "start": 24,
-            "end": 43,
+            "start": 30,
+            "end": 49,
             "value": "arvindabc@yahoo.com",
             "entity": "email"
           }
@@ -1080,7 +1080,7 @@
       },
       {
         "text": "nikhil25@gmail.com",
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 0,
@@ -1092,7 +1092,7 @@
       },
       {
         "text": "my email address is zabana@hotmail.com",
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 20,
@@ -1104,7 +1104,7 @@
       },
       {
         "text": "my email id is xyz@gmail.com",
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 15,
@@ -1402,7 +1402,7 @@
       },
       {
         "text": "email id is nikhilverma@gmail.com",
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 12,
@@ -1414,7 +1414,7 @@
       },
       {
         "text": "send me at nikhil45@gmail.com",
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 11,
@@ -1426,7 +1426,7 @@
       },
       {
         "text": "please send urgently on aakash@yahoo.in",
-        "intent": "restaurant_search",
+        "intent": "affirm",
         "entities": [
           {
             "start": 24,
