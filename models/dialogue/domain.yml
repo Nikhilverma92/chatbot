@@ -41,7 +41,7 @@ slots:
   cuisine:
     initial_value: null
     type: rasa_core.slots.TextSlot
-  email_address:
+  email:
     initial_value: null
     type: rasa_core.slots.TextSlot
   location:
