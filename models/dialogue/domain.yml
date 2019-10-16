@@ -10,7 +10,9 @@ action_names:
 - utter_ask_price
 - utter_ask_for_email_address
 - utter_email_sent_goodbye
+- utter_not_operate
 - action_restaurant
+- action_location
 actions:
 - utter_greet
 - utter_goodbye
@@ -22,7 +24,9 @@ actions:
 - utter_ask_price
 - utter_ask_for_email_address
 - utter_email_sent_goodbye
+- utter_not_operate
 - actions.ActionSearchRestaurants
+- actions.Searchforlocation
 config:
   store_entities_as_slots: true
 entities:
@@ -38,9 +42,27 @@ intents:
 - thankyou
 - restaurant_search
 slots:
+  Validate_loc:
+    initial_value: null
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - tier12
+    - outofrange
+    - notworking
   cuisine:
     initial_value: null
+<<<<<<< HEAD
     type: rasa_core.slots.TextSlot
+=======
+    type: rasa_core.slots.CategoricalSlot
+    values:
+    - chinese
+    - italian
+    - south indian
+    - north indian
+    - mexican
+    - american
+>>>>>>> 8d206406e6e7b44b8fbc4c5fdb523e9ee3366c4d
   email:
     initial_value: null
     type: rasa_core.slots.TextSlot
@@ -102,3 +124,6 @@ templates:
   - text: hey there! How may i help you
   - text: Hi, How can I help you!
   - text: Hey, How is it going. How May I help you Today
+  utter_not_operate:
+  - text: We do not operate in that location. Can you specify some other location
+      please.
