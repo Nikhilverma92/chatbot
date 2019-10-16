@@ -2,10 +2,10 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
+        "cuisine",
         "price",
         "email",
-        "location",
-        "cuisine"
+        "location"
       ]
     },
     "action_restaurant": {
@@ -22,7 +22,7 @@
   },
   "rasa_core": "0.10.1",
   "max_histories": [
-    4,
+    5,
     5
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
