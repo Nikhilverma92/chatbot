@@ -1826,7 +1826,7 @@
       },
       {
         "text": "i can spend 299 for mexcian food in bihar",
-        "intent": "",
+        "intent": "restaurant_search",
         "entities": [
           {
             "start": 20,
@@ -1845,6 +1845,167 @@
             "end": 41,
             "value": "bihar",
             "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "mexican food delights me",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "big fan of american food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "american",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "south indian food is delight to me",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "south indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "north indian dishes are famous all over india",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "north indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 31,
+            "end": 45,
+            "value": "all over india",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "i will prefer price for 300 ",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 27,
+            "value": "300",
+            "entity": "low"
+          }
+        ]
+      },
+      {
+        "text": "500 rupees is ok for me",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "500",
+            "entity": "medium"
+          }
+        ]
+      },
+      {
+        "text": "exotic mexican restaurants in bhopal",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "mexican",
+            "entity": "cuisine"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "value": "bhopal",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Yes, give me",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "top 10 american restaurants in vadodara",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "value": "vadodara",
+            "entity": "location"
+          },
+          {
+            "start": 7,
+            "end": 16,
+            "value": "american ",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "600 rupees maximum budget for south indian food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "600",
+            "entity": "medium"
+          },
+          {
+            "start": 30,
+            "end": 42,
+            "value": "south indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "ok, ajayumar@yahoo.com",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 4,
+            "end": 22,
+            "value": "ajayumar@yahoo.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "email id: prahddh@gmail.com",
+        "intent": "",
+        "entities": [
+          {
+            "start": 10,
+            "end": 27,
+            "value": "prahddh@gmail.com",
+            "entity": "email"
           }
         ]
       }
