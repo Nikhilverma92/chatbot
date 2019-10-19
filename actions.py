@@ -7,6 +7,7 @@ from rasa_core.events import SlotSet
 import zomatopy
 import json
 import pandas as pd
+import smtplib
 
 
 
@@ -83,6 +84,15 @@ class ActionSearchRestaurants(Action):
             for a in response.index:
                 output_data= output_data + str(response["Name"][a]) + " in " + str(response["Location"][a]) + " has been rated -- " + str(response["Rating"][a]) +" CFT is --  "+ str(response["CFT"][a]) + "\n"
 
-
             dispatcher.utter_message("------------------------------\n"+output_data)
         return [SlotSet('location',loc)]
+
+	
+class send_mail(Action):
+	def name(self):
+			return 'action_email'
+		
+	def run(self, dispatcher, tracker, domain):
+		email_received = tracker.get_slot ('email')
+		restaurants10 = restaurants.head(10)
+		
