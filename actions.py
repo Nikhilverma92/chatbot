@@ -41,20 +41,40 @@ class ActionSearchRestaurants(Action):
 		zomato = zomatopy.initialize_app(config)
 		loc = tracker.get_slot('location')
 		cuisine = tracker.get_slot('cuisine')
-        #price = tracker.get_slot('price')
+        price = tracker.get_slot('price')
 		location_detail=zomato.get_location(loc, 1)
 		d1 = json.loads(location_detail)
 		lat=d1["location_suggestions"][0]["latitude"]
 		lon=d1["location_suggestions"][0]["longitude"]
 		cuisines_dict={'mexican':73,'American':1,'chinese':25,'italian':55,'north indian':50,'south indian':85}
-		results=zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine)), 5)
+		results=zomato.restaurant_search_all("", lat, lon, str(cuisines_dict.get(cuisine)))
 		d = json.loads(results)
 		response=""
+        restaurant_data={}
 		if d['results_found'] == 0:
-			response= "no results"
+			response= "No Restaurants were found for the given input."
 		else:
-			for restaurant in d['restaurants']:
-				response=response+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ " has been rated ---" + restaurant['restaurant']['user_rating']['aggregate_rating'] + "\n\n"
+			"""
+            for restaurant in d['restaurants']:
+				#response=response+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ " has been rated ---" + restaurant['restaurant']['user_rating']['aggregate_rating'] + "\n\n"
+               
+                restaurant_data['Name']=restaurant['restaurant']['name'];
+                restaurant_data['Location']=restaurant['restaurant']['location']['address'];
+                restaurant_data['Rating']=restaurant['restaurant']['user_rating']['aggregate_rating'];
+                restaurant_data['CFT']=restaurant['restaurant']['average_cost_for_two'];
+            """   
+            response = pd.DataFrame({"Name":restaurant['restaurant']['name'],"Location":restaurant['restaurant']['location']['address'],"Rating":restaurant['restaurant']['user_rating']['aggregate_rating'],"CFT":restaurant['restaurant']['average_cost_for_two']} for restaurant in d['restaurants'])
+            
+            if price.lower() == "low":
+                response = response[response['CFT']<=300];
+            elif price.lower() == "medium":
+                response = response[(response['CFT']>300) & (response['CFT']<=700)]
+            else:
+                response = response[response['CFT']>700]
+            
+            response.sort_values(["CFT"],axis=0,ascending =False,inplace=True)
+            
+            response=response.head(5);
 
 		dispatcher.utter_message("------------------------------\n"+response)
 		return [SlotSet('location',loc)]

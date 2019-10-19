@@ -229,6 +229,19 @@ class Zomato:
         return r#a = ast.literal_eval(r)
 
 
+    def restaurant_search_all(self, query="", latitude="", longitude="", cuisines=""):
+        """
+        Takes either query, latitude and longitude or cuisine as input.
+        Returns a list of Restaurant IDs.
+        """
+        cuisines = "%2C".join(cuisines.split(","))
+        if str(limit).isalpha() == True:
+            raise ValueError('LimitNotInteger')
+        headers = {'Accept': 'application/json', 'user-key': self.user_key}
+        r = (requests.get(base_url + "search?q=" + str(query) + "&lat=" + str(latitude) + "&lon=" + str(longitude) + "&cuisines=" + str(cuisines) , headers=headers).content).decode("utf-8")
+        return r#a = ast.literal_eval(r)
+        
+        
     def get_location(self, query="", limit=5):
         """
         Takes either query, latitude and longitude or cuisine as input.
