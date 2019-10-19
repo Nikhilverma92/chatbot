@@ -6,7 +6,7 @@ from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
 import zomatopy
 import json
-
+import smtplib
 
 class Searchforlocation(Action):
     def name(self):
@@ -84,4 +84,7 @@ class send_mail(Action):
 			return 'action_email'
 		
 	def run(self, dispatcher, tracker, domain):
+		email_received = tracker.get_slot ('email')
+		restaurants10 = restaurants.head(10)
+		
 		
