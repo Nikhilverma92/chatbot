@@ -2008,6 +2008,294 @@
             "entity": "email"
           }
         ]
+      },
+      {
+        "text": "bangalore",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "bangalore",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "bangaluru",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "bangaluru",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "mumbai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "mumbai",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "bombay",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "bombay",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "calcutta",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "calcutta",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "kolkata",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "kolkata",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "hyderabad",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "hyderabad",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "hyderbad",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "hyderbad",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "kolkta",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "kolkta",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "kochin",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "kochin",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "cochin",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "cochin",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "banglore",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "banglore",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "jamshedpur",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "jamshedpur",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "new delhi",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "new delhi",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "aurangabad",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "aurangabad",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "auragabad",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "auragabad",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "bareilly",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "bareilly",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "barilly ",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "barilly ",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "bhubaneswar",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "bhubaneswar",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "bhuvaneswar",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "bhuvaneswar",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "cutack",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "cutack",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "cuttack",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "cuttack",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "gurgaon",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "gurgaon",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "gurugram",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "gurugram",
+            "entity": "location"
+          }
+        ]
       }
     ]
   }
