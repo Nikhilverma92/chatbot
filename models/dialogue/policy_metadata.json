@@ -2,23 +2,16 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-<<<<<<< HEAD
-        "cuisine",
-        "price",
-        "email",
-        "location"
-=======
-        "email",
         "location",
-        "price",
-        "cuisine"
->>>>>>> 8d206406e6e7b44b8fbc4c5fdb523e9ee3366c4d
+        "email",
+        "cuisine",
+        "price"
       ]
     },
     "action_location": {
       "slots": [
-        "Validate_loc",
-        "location"
+        "location",
+        "Validate_loc"
       ]
     },
     "action_restaurant": {
@@ -35,7 +28,7 @@
   },
   "rasa_core": "0.10.1",
   "max_histories": [
-    5,
+    4,
     5
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
