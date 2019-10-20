@@ -1415,6 +1415,783 @@
           }
         ],
         "text": "Chenai "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 22,
+            "value": "south indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "need some south indian restaurants "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "american",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "american restaurants near me"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 25,
+            "value": "american",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "looking for some american restaurants "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 26,
+            "end": 38,
+            "value": "south indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "can you find me some best south indian places"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 18,
+            "value": "north indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 34,
+            "end": 42,
+            "value": "guhawati",
+            "entity": "location"
+          }
+        ],
+        "text": "top 5 north indian restaurants in guhawati"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "mexican",
+            "entity": "cuisine"
+          },
+          {
+            "start": 46,
+            "end": 53,
+            "value": "Asansol",
+            "entity": "location"
+          }
+        ],
+        "text": "give me a list of mexican food restaurants in Asansol"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 13,
+            "end": 21,
+            "value": "american",
+            "entity": "cuisine"
+          },
+          {
+            "start": 35,
+            "end": 44,
+            "value": "under 300",
+            "entity": "low"
+          }
+        ],
+        "text": "give me some american place to eat under 300"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 30,
+            "value": "south indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 51,
+            "end": 60,
+            "value": "Bangalpur",
+            "entity": "location"
+          }
+        ],
+        "text": "give me a list of south indian food restaurants in Bangalpur"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "mexican",
+            "entity": "cuisine"
+          },
+          {
+            "start": 33,
+            "end": 40,
+            "value": "lucknow",
+            "entity": "location"
+          }
+        ],
+        "text": "looking for mexican curry around lucknow"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "my city",
+            "entity": "location"
+          },
+          {
+            "start": 61,
+            "end": 69,
+            "value": "american",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "around my city can you tell which is the best restaurant for american food"
+      },
+      {
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 25,
+            "end": 47,
+            "value": "cuisinelover@gmail.com",
+            "entity": "email"
+          }
+        ],
+        "text": "please send me detail on cuisinelover@gmail.com"
+      },
+      {
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 12,
+            "end": 29,
+            "value": "wanderer@yahoo.in",
+            "entity": "email"
+          }
+        ],
+        "text": "yes please, wanderer@yahoo.in"
+      },
+      {
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "mexican",
+            "entity": "cuisine"
+          },
+          {
+            "start": 62,
+            "end": 69,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "mexican food is my favourite, can you send me details of only mexican food"
+      },
+      {
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "american",
+            "entity": "cuisine"
+          },
+          {
+            "start": 19,
+            "end": 36,
+            "value": "my sister's house",
+            "entity": "location"
+          }
+        ],
+        "text": "american food near my sister's house "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "American",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "American food is my weakness "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 28,
+            "value": "south indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "Jammu",
+            "entity": "location"
+          }
+        ],
+        "text": "can you find me south indian places in Jammu"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "deny",
+        "text": "No, please don't "
+      },
+      {
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 11,
+            "end": 38,
+            "value": "tanujagrawal@rediffmail.com",
+            "entity": "email"
+          }
+        ],
+        "text": "ping me at tanujagrawal@rediffmail.com"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "price",
+            "entity": "price"
+          },
+          {
+            "start": 43,
+            "end": 56,
+            "value": "more than 700",
+            "entity": "High"
+          }
+        ],
+        "text": "price is not a barrier for me, will prefer more than 700"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "low",
+            "entity": "low"
+          },
+          {
+            "start": 11,
+            "end": 23,
+            "value": "north indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "patna",
+            "entity": "location"
+          }
+        ],
+        "text": "low budget north indian restaurants in patna"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 27,
+            "value": "mexcian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 12,
+            "end": 15,
+            "value": "299",
+            "entity": "low"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "value": "bihar",
+            "entity": "location"
+          }
+        ],
+        "text": "i can spend 299 for mexcian food in bihar"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "mexican food delights me"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "american",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "big fan of american food"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "south indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "south indian food is delight to me"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "north indian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 31,
+            "end": 45,
+            "value": "all over india",
+            "entity": "location"
+          }
+        ],
+        "text": "north indian dishes are famous all over india"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 27,
+            "value": "300",
+            "entity": "low"
+          }
+        ],
+        "text": "i will prefer price for 300 "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "500",
+            "entity": "medium"
+          }
+        ],
+        "text": "500 rupees is ok for me"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "mexican",
+            "entity": "cuisine"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "value": "bhopal",
+            "entity": "location"
+          }
+        ],
+        "text": "exotic mexican restaurants in bhopal"
+      },
+      {
+        "intent": "affirm",
+        "text": "Yes, give me"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 31,
+            "end": 39,
+            "value": "vadodara",
+            "entity": "location"
+          },
+          {
+            "start": 7,
+            "end": 16,
+            "value": "american ",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "top 10 american restaurants in vadodara"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "600",
+            "entity": "medium"
+          },
+          {
+            "start": 30,
+            "end": 42,
+            "value": "south indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "600 rupees maximum budget for south indian food"
+      },
+      {
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 4,
+            "end": 22,
+            "value": "ajayumar@yahoo.com",
+            "entity": "email"
+          }
+        ],
+        "text": "ok, ajayumar@yahoo.com"
+      },
+      {
+        "entities": [
+          {
+            "start": 10,
+            "end": 27,
+            "value": "prahddh@gmail.com",
+            "entity": "email"
+          }
+        ],
+        "text": "email id: prahddh@gmail.com"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "bangalore",
+            "entity": "location"
+          }
+        ],
+        "text": "bangalore"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "bangaluru",
+            "entity": "location"
+          }
+        ],
+        "text": "bangaluru"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "mumbai",
+            "entity": "location"
+          }
+        ],
+        "text": "mumbai"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "bombay",
+            "entity": "location"
+          }
+        ],
+        "text": "bombay"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "calcutta",
+            "entity": "location"
+          }
+        ],
+        "text": "calcutta"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "kolkata",
+            "entity": "location"
+          }
+        ],
+        "text": "kolkata"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "hyderabad",
+            "entity": "location"
+          }
+        ],
+        "text": "hyderabad"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "hyderbad",
+            "entity": "location"
+          }
+        ],
+        "text": "hyderbad"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "kolkta",
+            "entity": "location"
+          }
+        ],
+        "text": "kolkta"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "kochin",
+            "entity": "location"
+          }
+        ],
+        "text": "kochin"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "cochin",
+            "entity": "location"
+          }
+        ],
+        "text": "cochin"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "banglore",
+            "entity": "location"
+          }
+        ],
+        "text": "banglore"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "jamshedpur",
+            "entity": "location"
+          }
+        ],
+        "text": "jamshedpur"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "new delhi",
+            "entity": "location"
+          }
+        ],
+        "text": "new delhi"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "aurangabad",
+            "entity": "location"
+          }
+        ],
+        "text": "aurangabad"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "auragabad",
+            "entity": "location"
+          }
+        ],
+        "text": "auragabad"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "bareilly",
+            "entity": "location"
+          }
+        ],
+        "text": "bareilly"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "barilly ",
+            "entity": "location"
+          }
+        ],
+        "text": "barilly "
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "bhubaneswar",
+            "entity": "location"
+          }
+        ],
+        "text": "bhubaneswar"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "bhuvaneswar",
+            "entity": "location"
+          }
+        ],
+        "text": "bhuvaneswar"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "cutack",
+            "entity": "location"
+          }
+        ],
+        "text": "cutack"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "cuttack",
+            "entity": "location"
+          }
+        ],
+        "text": "cuttack"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "gurgaon",
+            "entity": "location"
+          }
+        ],
+        "text": "gurgaon"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "gurugram",
+            "entity": "location"
+          }
+        ],
+        "text": "gurugram"
       }
     ],
     "regex_features": [
