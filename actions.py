@@ -17,20 +17,64 @@ class SendMailToReceiver(Action):
         return 'action_email_sent'
 	
     def run(self, dispatcher, tracker, domain):
-        #email_received = tracker.get_slot ('email')
-        #restaurants10 = restaurants.head(10)
-        # creates SMTP session 
-        mail_content = 'Hello, This is a simple mail.'
-        #The mail addresses and password
+        
+        config={ "user_key":"5200b060757d691783e5c806775b36bd"}
+        zomato = zomatopy.initialize_app(config)
+        loc = tracker.get_slot('location')
+        cuisine = tracker.get_slot('cuisine')
+        price = tracker.get_slot('price')
+        email_add = tracker.get_slot('email')
+        location_detail=zomato.get_location(loc, 1)
+        d1 = json.loads(location_detail)
+        lat=d1["location_suggestions"][0]["latitude"]
+        lon=d1["location_suggestions"][0]["longitude"]
+        cuisines_dict={'mexican':73,'American':1,'chinese':25,'italian':55,'north indian':50,'south indian':85}
+        results=zomato.restaurant_search_all("", lat, lon, str(cuisines_dict.get(cuisine)),100)
+        d = json.loads(results)
+        response=""
+        output_data=""
+        restaurant_data={}
+        if d['results_found'] == 0:
+            output_data= "No Restaurants were found for the given input."
+        else:
+            """
+            for restaurant in d['restaurants']:
+                #response=response+ restaurant['restaurant']['name']+ " in "+ restaurant['restaurant']['location']['address']+ " has been rated ---" + restaurant['restaurant']['user_rating']['aggregate_rating'] + "\n\n"
+               
+                restaurant_data['Name']=restaurant['restaurant']['name'];
+                restaurant_data['Location']=restaurant['restaurant']['location']['address'];
+                restaurant_data['Rating']=restaurant['restaurant']['user_rating']['aggregate_rating'];
+                restaurant_data['CFT']=restaurant['restaurant']['average_cost_for_two'];
+            """   
+            response = pd.DataFrame({"Name":restaurant['restaurant']['name'],"Location":restaurant['restaurant']['location']['address'],"Rating":restaurant['restaurant']['user_rating']['aggregate_rating'],"CFT":restaurant['restaurant']['average_cost_for_two']} for restaurant in d['restaurants'])
+
+            if price.lower() == "low":
+                response = response[response['CFT']<=300];
+            elif price.lower() == "medium":
+                response = response[(response['CFT']>300) & (response['CFT']<=700)]
+            else:
+                response = response[response['CFT']>700]
+
+            response = response.sort_values(by=["CFT"],ascending =False)
+
+            response=response.head(10);
+            #dispatcher.utter_message("---------------------------------------------\n"response)
+                        
+            for a in response.index:
+                output_data= output_data + str(response["Name"][a]) + " in " + str(response["Location"][a]) + " has been rated -- " + str(response["Rating"][a]) +" CFT is --  "+ str(response["CFT"][a]) + "\n"
+
+            
+        
+        mail_content = output_data
+
         sender_address = 'restaurantfoodiesearch@gmail.com'
         sender_pass = 'qwerty@123'
-        receiver_address = 'nvvermanikhil@gmail.com'
-        #Setup the MIME
+        receiver_address = email_add
+
         message = MIMEMultipart()
         message['From'] = sender_address
         message['To'] = receiver_address
-        message['Subject'] = 'A test mail sent by Python. It has not an attachment.'   #The subject line
-        #The body and the attachments for the mail
+        message['Subject'] = 'Restaurants details from foodie.'   #The subject line
         message.attach(MIMEText(mail_content, 'plain'))
         #Create SMTP session for sending the mail
         session = smtplib.SMTP('smtp.gmail.com', 587) #use gmail with port

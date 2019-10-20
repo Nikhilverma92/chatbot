@@ -581,8 +581,7 @@
     - export
 
 ## Generated Story -1105737737719149275
-* greet{"location": "hola"}
-    - slot{"location": "hola"}
+* greet
     - utter_greet
 * restaurant_search{"cuisine": "american", "location": "pune"}
     - slot{"cuisine": "american"}
@@ -636,7 +635,7 @@
     - slot{"Validate_loc": "Tier12"}
     - slot{"location": "chennai"}
     - utter_ask_price
-* restaurant_search{"low": "300", "price": "700"}
+* restaurant_search{"price": "700"}
     - slot{"price": "700"}
     - action_restaurant
     - slot{"location": "chennai"}
@@ -647,3 +646,25 @@
 * goodbye
     - utter_goodbye
     - export
+
+
+## Generated Story 2895263103598800775
+* restaurant_search{"price": "high", "cuisine": "mexican", "location": "bangalore"}
+    - slot{"cuisine": "mexican"}
+    - slot{"location": "bangalore"}
+    - slot{"price": "high"}
+    - action_location
+    - slot{"Validate_loc": "Tier12"}
+    - slot{"location": "bangalore"}
+    - action_restaurant
+    - slot{"location": "bangalore"}
+    - utter_ask_email
+* restaurant_search{"email": "aakashkumar5066@gmail.com"}
+    - slot{"email": "aakashkumar5066@gmail.com"}
+    - action_email_sent
+    - slot{"email": "Done"}
+    - utter_email_sent_goodbye
+* goodbye
+    - utter_goodbye
+    - export
+
