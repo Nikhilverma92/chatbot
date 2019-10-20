@@ -80,7 +80,7 @@ class ActionSearchRestaurants(Action):
             response = response.sort_values(by=["CFT"],ascending =False)
 
             response=response.head(5);
-            dispatcher.utter_message("---------------------------------------------\n"response)
+            #dispatcher.utter_message("---------------------------------------------\n"response)
                         
             for a in response.index:
                 output_data= output_data + str(response["Name"][a]) + " in " + str(response["Location"][a]) + " has been rated -- " + str(response["Rating"][a]) +" CFT is --  "+ str(response["CFT"][a]) + "\n"
