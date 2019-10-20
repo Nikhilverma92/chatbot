@@ -101,7 +101,7 @@ class send_mail(Action):
 		#The mail addresses and password
 		sender_address = 'restaurantfoodiesearch@gmail.com'
 		sender_pass = 'qwerty@123'
-		receiver_address = 'akkic2@gmail.com'
+		receiver_address = 'nvvermanikhil@gmail.com'
 		#Setup the MIME
 		message = MIMEMultipart()
 		message['From'] = sender_address
