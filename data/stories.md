@@ -28,6 +28,7 @@
 	- utter_ask_for_email_address
 * affirm{"email": "email@gmail.com"}
 	- slot{"email": "email@gmail.com"}
+	- action_email
 	- utter_email_sent_goodbye
 	
 	
@@ -57,6 +58,7 @@
     - utter_ask_for_email_address
 * affirm{"email": "email@gmail.com"}
 	- slot{"email": "email@gmail.com"}
+	- action_email
     - utter_email_sent_goodbye
     - export
 
@@ -113,6 +115,7 @@
     - utter_ask_for_email_address
 * affirm{"email": "email@gmail.com"}
 	- slot{"email": "email@gmail.com"}
+	- action_email
     - utter_email_sent_goodbye
     - export
 
@@ -138,6 +141,7 @@
 	- utter_ask_for_email_address
 * affirm{"email": "email@gmail.com"}
 	- slot{"email": "email@gmail.com"}
+	- action_email
 	- utter_email_sent_goodbye
 	
 	
@@ -165,6 +169,7 @@
 	- utter_ask_for_email_address
 * affirm{"email": "email@gmail.com"}
 	- slot{"email": "email@gmail.com"}
+	- action_email
 	- utter_email_sent_goodbye
 
 
@@ -210,6 +215,7 @@
     - utter_ask_email
 * affirm{"email": "akkic2@yahoo.com"}
     - slot{"email": "akkic2@yahoo.com"}
+	- action_email
     - utter_email_sent_goodbye
     - export
 
@@ -232,6 +238,7 @@
     - utter_ask_email
 * affirm{"email": "akkic2@yahoo.com"}
     - slot{"email": "akkic2@yahoo.com"}
+	- action_email
     - utter_email_sent_goodbye
     - export
 
@@ -277,6 +284,7 @@
     - utter_ask_for_email_address
 * affirm{"email": "naacn@jahsh.com"}
     - slot{"email": "naacn@jahsh.com"}
+	- action_email
     - utter_email_sent_goodbye
     - export
 	
@@ -369,6 +377,7 @@
     - utter_ask_email
 * affirm{"email": "naacn@jahsh.com"}
     - slot{"email": "naacn@jahsh.com"}
+	- action_email
     - utter_email_sent_goodbye
     - export
 	
@@ -388,6 +397,7 @@
     - utter_ask_email
 * affirm{"email": "aakau@hotmail.com"}
     - slot{"email": "aakau@hotmail.com"}
+	- action_email
     - utter_email_sent_goodbye
     - export
 
@@ -406,6 +416,7 @@
     - utter_ask_email
 * affirm{"email": "akku@hot.com"}
     - slot{"email": "akku@hot.com"}
+	- action_email
     - utter_email_sent_goodbye
     - export
 	
@@ -449,6 +460,7 @@
     - utter_ask_email
 * affirm{"email": "abhi@akkucd.in"}
     - slot{"email": "abhi@akkucd.in"}
+	- action_email
     - utter_email_sent_goodbye
     - export
 
@@ -483,6 +495,7 @@
     - utter_ask_email
 * affirm{"email": "aakash@ana.co.in"}
     - slot{"email": "aakash@ana.co.in"}
+	- action_email
     - utter_email_sent_goodbye
     - export
 
@@ -502,6 +515,7 @@
     - utter_ask_email
 * affirm{"email": "aakash@ana.co.in"}
     - slot{"email": "aakash@ana.co.in"}
+	- action_email
     - utter_email_sent_goodbye
     - export
 	

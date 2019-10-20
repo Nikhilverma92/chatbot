@@ -89,7 +89,7 @@ class ActionSearchRestaurants(Action):
         return [SlotSet('location',loc)]
 
 	
-class send_mail(Action):
+class SendMailToReceiver(Action):
 	def name(self):
 			return 'action_email'
 		
@@ -101,7 +101,7 @@ class send_mail(Action):
 		#The mail addresses and password
 		sender_address = 'restaurantfoodiesearch@gmail.com'
 		sender_pass = 'qwerty@123'
-		receiver_address = 'nvvermanikhil@gmail.com'
+		receiver_address = 'akkic2@gmail.com'
 		#Setup the MIME
 		message = MIMEMultipart()
 		message['From'] = sender_address
@@ -116,5 +116,7 @@ class send_mail(Action):
 		text = message.as_string()
 		session.sendmail(sender_address, receiver_address, text)
 		session.quit()
-		print('Mail Sent')
+		
+        dispatcher.utter_message("-----------------Mail Sent-----------------\n")
+        
 

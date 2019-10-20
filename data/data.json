@@ -1643,12 +1643,6 @@
             "end": 40,
             "value": "lucknow",
             "entity": "location"
-          },
-          {
-            "start": 26,
-            "end": 40,
-            "value": "around lucknow",
-            "entity": "location"
           }
         ]
       },
