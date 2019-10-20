@@ -39,6 +39,7 @@
     "prev_utter_email_sent_goodbye",
     "prev_utter_not_operate",
     "prev_action_restaurant",
-    "prev_action_location"
+    "prev_action_location",
+    "prev_action_email_sent"
   ]
 }

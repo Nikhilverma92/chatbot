@@ -2,25 +2,30 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "cuisine",
-        "email",
+        "location",
         "price",
-        "location"
+        "email",
+        "cuisine"
       ]
     },
     "action_location": {
       "slots": [
-        "Validate_loc",
-        "location"
+        "location",
+        "Validate_loc"
       ]
+    },
+    "utter_goodbye": {
+      "slots": []
     },
     "action_restaurant": {
       "slots": [
         "location"
       ]
     },
-    "utter_goodbye": {
-      "slots": []
+    "action_email_sent": {
+      "slots": [
+        "email"
+      ]
     },
     "utter_email_sent_goodbye": {
       "slots": []

@@ -13,6 +13,7 @@ action_names:
 - utter_not_operate
 - action_restaurant
 - action_location
+- action_email_sent
 actions:
 - utter_greet
 - utter_goodbye
@@ -27,6 +28,7 @@ actions:
 - utter_not_operate
 - actions.ActionSearchRestaurants
 - actions.Searchforlocation
+- actions.SendMailToReceiver
 config:
   store_entities_as_slots: true
 entities:
