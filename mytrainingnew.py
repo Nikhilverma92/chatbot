@@ -273,3 +273,27 @@
     - utter_goodbye
     - export
 
+## Generated Story -8486241683112340721
+* greet
+    - utter_greet
+* restaurant_search{"location": "mumbai", "cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
+    - slot{"location": "mumbai"}
+    - action_location
+    - slot{"Validate_loc": "Tier12"}
+    - slot{"location": "mumbai"}
+    - utter_ask_price
+* restaurant_search{"price": "high"}
+    - slot{"price": "high"}
+    - action_restaurant
+    - slot{"location": "mumbai"}
+    - utter_ask_email
+* affirm
+    - utter_ask_for_email_address
+* restaurant_search{"email": "akku@gmail.com"}
+    - slot{"email": "akku@gmail.com"}
+    - action_email_sent
+    - slot{"email": "Done"}
+    - utter_email_sent_goodbye
+    - export
+

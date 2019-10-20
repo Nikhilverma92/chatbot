@@ -106,3 +106,4 @@ actions:
 - utter_not_operate
 - actions.ActionSearchRestaurants
 - actions.Searchforlocation
+- actions.SendMailToReceiver
