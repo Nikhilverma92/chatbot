@@ -1643,6 +1643,12 @@
             "end": 40,
             "value": "lucknow",
             "entity": "location"
+          },
+          {
+            "start": 26,
+            "end": 40,
+            "value": "around lucknow",
+            "entity": "location"
           }
         ]
       },
@@ -2324,6 +2330,90 @@
             "end": 8,
             "value": "american",
             "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "300-700",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "300-700",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "<300",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "<300",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "less than 300",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "less than 300",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "300 to 700 is ok for me",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "300 to 700",
+            "entity": "medium"
+          }
+        ]
+      },
+      {
+        "text": ">700",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": ">700",
+            "entity": "High"
+          }
+        ]
+      },
+      {
+        "text": "300-700 is perfect range ",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "300-700",
+            "entity": "medium"
+          }
+        ]
+      },
+      {
+        "text": "greater than 700",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "greater than 700",
+            "entity": "High"
           }
         ]
       }
