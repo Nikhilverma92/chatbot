@@ -396,3 +396,50 @@
     - utter_goodbye
     - export
 
+## Generated Story -2761258070489457386
+* restaurant_search{"location": "lgnsh"}
+    - slot{"location": "lgnsh"}
+    - action_location
+    - slot{"Validate_loc": "OutOfRange"}
+    - slot{"location": null}
+    - utter_not_operate
+* restaurant_search{"location": "delhi"}
+    - slot{"location": "delhi"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "south indian", "price": "high"}
+    - slot{"cuisine": "south indian"}
+    - slot{"price": "high"}
+    - action_restaurant
+    - slot{"location": "delhi"}
+    - utter_ask_email
+* affirm{"email": "aakashkumar5066@gmail.com"}
+    - slot{"email": "aakashkumar5066@gmail.com"}
+    - action_email_send
+    - utter_email_sent_goodbye
+    - export
+
+## Generated Story 7536719899963834054
+* restaurant_search{"cuisine": "italian"}
+    - slot{"cuisine": "italian"}
+    - utter_ask_location
+* affirm{"location": "ajsnd"}
+    - slot{"location": "ajsnd"}
+    - action_location
+    - slot{"Validate_loc": "OutOfRange"}
+    - slot{"location": null}
+    - utter_not_operate
+* restaurant_search{"location": "noida", "price": "high"}
+    - slot{"location": "noida"}
+    - slot{"price": "high"}
+    - action_restaurant
+    - slot{"location": "noida"}
+    - utter_ask_email
+* affirm
+    - utter_ask_for_email_address
+* affirm{"email": "aakashkumar5066@gmail.com"}
+    - slot{"email": "aakashkumar5066@gmail.com"}
+    - action_email_send
+    - slot{"email": "Done"}
+    - utter_email_sent_goodbye
+    - export
+

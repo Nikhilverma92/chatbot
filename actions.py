@@ -14,7 +14,7 @@ from email.mime.text import MIMEText
 
 class SendMailToReceiver(Action):
     def name(self):
-        return 'action_email_sent'
+        return 'action_email_send'
 	
     def run(self, dispatcher, tracker, domain):
         
@@ -58,7 +58,7 @@ class SendMailToReceiver(Action):
             response = response.sort_values(by=["CFT"],ascending=False)
 
             response=response.head(10);
-            dispatcher.utter_message("---------------------------------------------\n" + response)
+            #dispatcher.utter_message("---------------------------------------------\n" + response)
             Snumber = 0
             
             for a in response.index:
@@ -110,7 +110,7 @@ class Searchforlocation(Action):
             #dispatcher.utter_message("---------------It is in Tier3---------------\n")
             return [SlotSet('Validate_loc',responses),SlotSet('location',None)]
         else:
-            response = "OutOfRange"
+            responses = "OutOfRange"
             #dispatcher.utter_message("---------------It is Out of range---------------\n")
             return [SlotSet('Validate_loc',responses),SlotSet('location',None)]
         
@@ -161,7 +161,7 @@ class ActionSearchRestaurants(Action):
 
             response=response.head(5);
             if response.empty:
-                output_data = "We did not get any restaurants for your given query. Please try again with some different criteria."
+                output_data = "We did not find any restaurants for your given query. Please try again with some different criteria."
             else:
                 Snumber=0
                 for a in response.index:
