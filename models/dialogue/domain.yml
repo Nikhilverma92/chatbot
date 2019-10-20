@@ -51,9 +51,6 @@ slots:
     - notworking
   cuisine:
     initial_value: null
-<<<<<<< HEAD
-    type: rasa_core.slots.TextSlot
-=======
     type: rasa_core.slots.CategoricalSlot
     values:
     - chinese
@@ -62,7 +59,6 @@ slots:
     - north indian
     - mexican
     - american
->>>>>>> 8d206406e6e7b44b8fbc4c5fdb523e9ee3366c4d
   email:
     initial_value: null
     type: rasa_core.slots.TextSlot
