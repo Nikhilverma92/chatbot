@@ -2,11 +2,14 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "location",
         "email",
-        "price",
-        "cuisine"
+        "cuisine",
+        "location",
+        "price"
       ]
+    },
+    "utter_greet": {
+      "slots": []
     },
     "action_location": {
       "slots": [
@@ -31,7 +34,7 @@
   },
   "rasa_core": "0.10.1",
   "max_histories": [
-    5,
+    4,
     5
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
