@@ -2416,6 +2416,298 @@
             "entity": "High"
           }
         ]
+      },
+      {
+        "text": " please show me some restaurants in delhi maybe",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 36,
+            "end": 41,
+            "value": "delhi",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": " i am hungry for mexican today",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "craving for some italian",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "italian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "want some italian food in pune location",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 26,
+            "end": 30,
+            "value": "pune",
+            "entity": "location"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "value": "italian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "yes in my email account zabb@gmail.com",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 24,
+            "end": 38,
+            "value": "zabb@gmail.com",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "low please",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "low",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "ofcourse",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ofcourse yes on my email",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 19,
+            "end": 24,
+            "value": "email",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "want to search some good restaurant near noida",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 41,
+            "end": 46,
+            "value": "noida",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "Food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Food",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "how about in noida and some chinese",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 13,
+            "end": 18,
+            "value": "noida",
+            "entity": "location"
+          },
+          {
+            "start": 28,
+            "end": 35,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "yes that would be noida and also in low price range please",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "noida",
+            "entity": "location"
+          },
+          {
+            "start": 36,
+            "end": 45,
+            "value": "low price",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "lets say mexican and in low budget",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "mexican",
+            "entity": "cuisine"
+          },
+          {
+            "start": 24,
+            "end": 34,
+            "value": "low budget",
+            "entity": "price"
+          }
+        ]
+      },
+      {
+        "text": "why not, abhi@akkucd.in",
+        "intent": "affirm",
+        "entities": [
+          {
+            "start": 9,
+            "end": 23,
+            "value": "abhi@akkucd.in",
+            "entity": "email"
+          }
+        ]
+      },
+      {
+        "text": "how about high budget italian food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 21,
+            "value": "high budget",
+            "entity": "High"
+          },
+          {
+            "start": 22,
+            "end": 29,
+            "value": "italian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "not at all",
+        "intent": "deny",
+        "entities": []
+      },
+      {
+        "text": "I want to try some Italian in noida in Medium budget, can you suggest something",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "Italian",
+            "entity": "cuisine"
+          },
+          {
+            "start": 30,
+            "end": 35,
+            "value": "noida",
+            "entity": "location"
+          },
+          {
+            "start": 39,
+            "end": 52,
+            "value": "Medium budget",
+            "entity": "medium"
+          }
+        ]
+      },
+      {
+        "text": "can you show me some high budget mexican food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 21,
+            "end": 32,
+            "value": "high budget",
+            "entity": "High"
+          },
+          {
+            "start": 33,
+            "end": 40,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "show me some delicasies in mumbai say mexican cuisine",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 27,
+            "end": 33,
+            "value": "mumbai",
+            "entity": "location"
+          },
+          {
+            "start": 38,
+            "end": 45,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "i want some chinese restaurants in goa and keep the budget high",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "chinese",
+            "entity": "cuisine"
+          },
+          {
+            "start": 35,
+            "end": 38,
+            "value": "goa",
+            "entity": "location"
+          },
+          {
+            "start": 52,
+            "end": 63,
+            "value": "budget high",
+            "entity": "High"
+          }
+        ]
       }
     ]
   }
