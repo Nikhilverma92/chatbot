@@ -8,7 +8,6 @@ import zomatopy
 import json
 import pandas as pd
 import smtplib
-
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
@@ -78,10 +77,10 @@ class ActionSearchRestaurants(Action):
             else:
                 response = response[response['CFT']>700]
 
-            #response = response.sort_values(by=["CFT"],ascending =False)
+            response = response.sort_values(by=["CFT"],ascending =False)
 
             response=response.head(5);
-            #dispatcher.utter_message("---------------------------------------------\n"response)
+            dispatcher.utter_message("---------------------------------------------\n"response)
                         
             for a in response.index:
                 output_data= output_data + str(response["Name"][a]) + " in " + str(response["Location"][a]) + " has been rated -- " + str(response["Rating"][a]) +" CFT is --  "+ str(response["CFT"][a]) + "\n"
@@ -98,20 +97,24 @@ class send_mail(Action):
 		#email_received = tracker.get_slot ('email')
 		#restaurants10 = restaurants.head(10)
 		# creates SMTP session 
-		s = smtplib.SMTP('smtp.gmail.com', 587) 
-  
-		# start TLS for security 
-		s.starttls() 
-  
-		# Authentication 
-		s.login("restaurantfoodiesearch@gmail.com", "qwerty@123") 
-  
-		# message to be sent 
-		message = "This is test mail"
- 
-		# sending the mail 
-		s.sendmail("restaurantfoodiesearch@gmail.com", "akkic2@gmail.com", message) 
-  
-		# terminating the session 
-		s.quit()
-		print("Mail sent")
+		mail_content = 'Hello, This is a simple mail.'
+		#The mail addresses and password
+		sender_address = 'restaurantfoodiesearch@gmail.com'
+		sender_pass = 'qwerty@123'
+		receiver_address = 'akkic2@gmail.com'
+		#Setup the MIME
+		message = MIMEMultipart()
+		message['From'] = sender_address
+		message['To'] = receiver_address
+		message['Subject'] = 'A test mail sent by Python. It has not an attachment.'   #The subject line
+		#The body and the attachments for the mail
+		message.attach(MIMEText(mail_content, 'plain'))
+		#Create SMTP session for sending the mail
+		session = smtplib.SMTP('smtp.gmail.com', 587) #use gmail with port
+		session.starttls() #enable security
+		session.login(sender_address, sender_pass) #login with mail_id and password
+		text = message.as_string()
+		session.sendmail(sender_address, receiver_address, text)
+		session.quit()
+		print('Mail Sent')
+
