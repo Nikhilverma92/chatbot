@@ -32,31 +32,6 @@
         ]
       },
       {
-        "value": "gurgaon",
-        "synonyms": [
-          "gurgaon",
-          "gurugram",
-          "gurugaon"
-        ]
-      },
-      {
-        "value": "calcuta",
-        "synonyms": [
-          "kolkata",
-          "kolkta",
-          "calcuta",
-		  "calcutta"
-        ]
-      },
-      {
-        "value": "Mumbai",
-        "synonyms": [
-          "mumbai",
-          "bombay",
-          "amchi"
-        ]
-      },
-      {
         "value": "non vegetarian",
         "synonyms": [
           "non veg",
@@ -1668,6 +1643,12 @@
             "end": 40,
             "value": "lucknow",
             "entity": "location"
+          },
+          {
+            "start": 26,
+            "end": 40,
+            "value": "around lucknow",
+            "entity": "location"
           }
         ]
       },
@@ -2313,6 +2294,42 @@
             "end": 8,
             "value": "gurugram",
             "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "american dishes",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "american",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "tell me some american restaurants in chennai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 13,
+            "end": 21,
+            "value": "american",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "american food",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "american",
+            "entity": "cuisine"
           }
         ]
       }
