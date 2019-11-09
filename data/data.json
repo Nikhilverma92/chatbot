@@ -2609,8 +2609,8 @@
           {
             "start": 10,
             "end": 21,
-            "value": "high budget",
-            "entity": "High"
+            "value": "high",
+            "entity": "price"
           },
           {
             "start": 22,
@@ -2702,10 +2702,10 @@
             "entity": "location"
           },
           {
-            "start": 52,
+            "start": 59,
             "end": 63,
-            "value": "budget high",
-            "entity": "High"
+            "value": "high",
+            "entity": "price"
           }
         ]
       }
